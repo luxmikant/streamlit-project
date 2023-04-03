@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import matplotlib
 import matplotlib.pyplot as plt
 
 st.set_page_config(layout='wide',page_title='startup analysis')
