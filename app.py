@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import matplotlib
 import matplotlib.pyplot as plt
 
 st.set_page_config(layout='wide',page_title='startup analysis')
@@ -88,7 +89,7 @@ option = st.sidebar.selectbox('Select One',['Overall Analysis','Startup','Invest
 if option == 'Overall Analysis':
         load_overall_analysis()
 elif option == 'Startup':
-    st.sidebar.selectbox('Select Startup',df['Startup'].unique().tolist())
+    st.sidebar.selectbox('Select Startup',df['startup'].unique().tolist())
     st.title('StartUp Analysis')
     btn1 = st.sidebar.button('Find StartUp Detail')
 else:
